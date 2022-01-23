@@ -4,7 +4,7 @@ import {
   Logo,
   LogoLink,
   Container,
-} from "../Navbar/styles/NavbarStyles";
+} from "../styles/NavbarStyles";
 import NavMobile from "./NavMobile";
 import NavDesktop from "./NavDesktop";
 

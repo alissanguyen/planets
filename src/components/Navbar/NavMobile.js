@@ -1,8 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import * as React from "react";
-import { Nav, Menu, Bars, List } from "../Navbar/styles/NavMobileStyles";
+import { Nav, Menu, Bars, List, Item, Link } from "../styles/NavMobileStyles";
 import useToggleMenu from "../../utils/useToggleMenu";
-import { Item, Link } from "../Navbar/styles/NavMobileStyles";
 import Icon from "../Icon/Icon";
 import { planets } from "../../constants/data.js";
 
