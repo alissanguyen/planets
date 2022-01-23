@@ -84,6 +84,8 @@ const PlanetSwitch = ({ data, activePlanet }) => {
             $planetColor={data.sectionColor}
           />
         );
+      default:
+        console.log("Unable to load website");
     }
   };
   return <>{planetSwitch()}</>;

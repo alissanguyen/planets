@@ -9,16 +9,13 @@ const NavMobile = ({ windowWidth }) => {
   const [handleToggle, restoreToDefault, isOpen, isExpanded, tabletBreakpoint] =
     useToggleMenu();
 
-  function handleResize() {
+  React.useEffect(() => {
     if (windowWidth >= tabletBreakpoint) {
       restoreToDefault();
     } else {
       return;
     }
-  }
-  React.useEffect(() => {
-    handleResize();
-  }, [windowWidth]);
+  }, [windowWidth, restoreToDefault, tabletBreakpoint]);
 
   return (
     <Nav>
