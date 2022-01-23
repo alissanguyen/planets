@@ -6,7 +6,7 @@ import {
   Span,
   Link,
 } from "../styles/IntroStyles";
-import Icon from "../Icon/Icon";
+import Icon from "../Icon";
 import { introContainerVariants } from "../../constants/container";
 
 const IntroContainer = ({ planetData, currentData, isChanging }) => {

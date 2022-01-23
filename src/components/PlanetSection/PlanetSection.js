@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Section, Container } from "../styles/PlanetSectionStyles";
 import useReplaceInfo from "../../utils/useReplaceInfo";
-import Tabs from "./Tabs/Tabs";
-import Illustration from "./Illustration/Illustration";
-import Intro from "./Intro/Intro";
-import Info from "./Info/Info";
+import Tabs from "./Tabs";
+import Illustration from "./Illustration";
+import Intro from "./Intro";
+import Info from "./Info";
 
 const PlanetSection = ({ planetData }) => {
   const [handleClick, currentData, currentTab, isChanging] =

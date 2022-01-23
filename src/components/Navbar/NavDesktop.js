@@ -1,5 +1,5 @@
+import { planets } from "../../constants/data";
 import { Nav, List, Item, Link } from "../styles/NavDesktopStyles";
-import { planets } from "../data";
 
 const NavDesktop = ({ pathName, activePlanet, onHover }) => {
   return (

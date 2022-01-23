@@ -2,7 +2,7 @@ import { AnimatePresence } from "framer-motion";
 import * as React from "react";
 import { Nav, Menu, Bars, List, Item, Link } from "../styles/NavMobileStyles";
 import useToggleMenu from "../../utils/useToggleMenu";
-import Icon from "../Icon/Icon";
+import Icon from "../Icon";
 import { planets } from "../../constants/data.js";
 
 const NavMobile = ({ windowWidth }) => {
