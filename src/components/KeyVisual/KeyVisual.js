@@ -1,7 +1,6 @@
 import { Container, Sun, AsteroidsBelt } from "../styles/KeyVisualStyles";
 import { planets } from "../../constants/data";
 import PlanetSwitch from "./PlanetSwitch";
-import { Route } from "react-router-dom";
 
 const KeyVisual = ({ activePlanet }) => {
   const containerVariants = {
@@ -31,7 +30,7 @@ const KeyVisual = ({ activePlanet }) => {
       animate="visible"
       exit="exit"
     >
-      <Route exact path="/" element={<Sun />}></Route>
+      <Sun />
       {planets.map((planet) => (
         <PlanetSwitch
           data={planet}

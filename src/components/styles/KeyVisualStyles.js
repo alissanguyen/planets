@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 import { asteroidsBackground } from "../../constants/asteroidsBackground";
-import sunImage from "../../assets/images/sun.png";
 import mercuryImage from "../../assets/images/planet-mercury.svg";
 import venusImage from "../../assets/images/planet-venus.svg";
 import earthImage from "../../assets/images/planet-earth.svg";
@@ -10,6 +9,7 @@ import jupiterImage from "../../assets/images/planet-jupiter.svg";
 import saturnImage from "../../assets/images/planet-saturn.svg";
 import uranusImage from "../../assets/images/planet-uranus.svg";
 import neptuneImage from "../../assets/images/planet-neptune.svg";
+import sunImage from "../../assets/images/sun.png";
 import { NavLink } from "react-router-dom";
 
 export const Container = styled(motion.div)`
@@ -76,13 +76,13 @@ export const Planet = styled(NavLink)`
         : ""};
   }
 `;
-
 export const Sun = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
   height: 80px;
   width: 80px;
+  pointer-events: none;
   border-radius: 1000px;
   background-image: url(${sunImage});
   background-size: cover;
