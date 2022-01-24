@@ -1,4 +1,6 @@
 # Planets
+URL https://planets.alissanguyen.dev
+
 A responsive landing page to learn about planets in the universe.
 
 ## What's New?
